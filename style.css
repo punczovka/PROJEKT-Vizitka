@@ -1,5 +1,8 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
+html { box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
 *, ::after, ::before { box-sizing: inherit; }
 
 /*
@@ -13,4 +16,102 @@ tlačítko Twitter aktivní:	 #0b7bc1
 tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
+
+
+/*.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+
+body {
+    background-color: #b2bec3;
+}
+
+.cardboard {
+    width: 550px;
+    margin: 150px auto;
+    padding: 30px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.72);
+    position: relative;
+  }
+
+  .cardboard img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 86%;
+    bottom: 80%;
+    box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.72);
+}
+
+    h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #d63031;
+    margin: 0px 0px 30px 0px;
+    padding: 0%;
+    border: none;
+    margin-block-start: none;
+    margin-block-end: none;
+    }
+
+.text1 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.twitter, .facebook {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.twitter {
+    margin-bottom: 5px;
+    margin-top: 30px;
+    background-color: #1da1f2;
+}
+
+.twitter:hover,
+.twitter:active,
+.twitter:focus {
+    background-color: #0b7bc1;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook:hover,
+.facebook:active,
+.facebook:focus {
+    background-color: #2b406e;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
 
